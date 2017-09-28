@@ -11,7 +11,7 @@ def check(n, c):
 
 
 def game():
-    random_number = random.randrange(1, 100, 1)
+    random_number = random.randint(1, 100)
     guess = 0
 
     while True:
@@ -23,7 +23,7 @@ def game():
             print('The number is too big.')
         elif result == 2:
             print('The number is too small.')
-        elif result == 3:
+        else:
             print('Congratulations, You guessed the number! Guesses taken:', guess)
             break
 
