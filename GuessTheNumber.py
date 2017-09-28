@@ -19,13 +19,13 @@ def game():
         result = check(random_number, player_number)
         guess += 1
 
-        if result == 3:
-            print('Congratulations, You guessed the number! Guesses taken:', guess)
-            break
+        if result == 1:
+            print('The number is too big.')
         elif result == 2:
             print('The number is too small.')
-        elif result == 1:
-            print('The number is too big.')
+        elif result == 3:
+            print('Congratulations, You guessed the number! Guesses taken:', guess)
+            break
 
 
 game()
